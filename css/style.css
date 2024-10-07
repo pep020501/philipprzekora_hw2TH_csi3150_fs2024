@@ -1,6 +1,7 @@
 /*imported google font(s) */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
  /* browser defaults */
@@ -15,9 +16,11 @@
  --font-color-secondary: var(#22153a);
  --logo-color: var(#6dcdeb);
  --page-tabs-color: var(#5728B5);
+ --btn-background-color: var(#)
+ 
 }
 
-/* main styling for page body */
+/* main styling for body */
 body {
     height: 100hv;
     background-color: var(--bg-primary, #0097f5);
@@ -54,18 +57,38 @@ font-weight: 500;
 /* page tabs */
 .navigation ul li a{
     text-decoration: none;
-    color: var(--page-tabs-color, #5728B5);
+    color:var(--page-tabs-color, #5728B5); 
     font-size:18px;
     justify-content: space-between;
     margin-right: 20px;
     transition: color 0.6 ease-in-out;
 }
 
-/* the user hovers over the page tabs and the text color changes from violet to red */
+
+/* the user hovers over the tabs and the text color changes from violet to red */
 .navigation ul li:hover a{
    color: #B52C2C; 
 }
 
+/* "contact me" button */
+.contact-me-btn{
+    color: var(--bg-primary, #0030AB);
+    background: var(--logo-color, #6dcdeb);
+    font-family: "Poppins", serif; 
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    padding: 5px 15px;
+    border-width: 5px;
+    border-color: var(--bg-primary, #0030AB);
+    transition: color 0,6 ease;
+}
 
+/*the user hovers over the button and it changes color while the pointer is on it */
+.contact-me-btn:hover{
+    color:var(--font-color-secondary, #22153a);
+    background-color: var(--page-tabs-color, #5728B5);
+    border-color: var(--font-color-secondary, #22153a);
 
+}
 
