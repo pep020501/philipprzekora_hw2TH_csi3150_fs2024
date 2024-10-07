@@ -6,44 +6,50 @@
     <title>Philip's Portfolio Site</title>
     <!--icon-->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
     <!--begin header-->
-    <header>
-      <nav>
-      <!--site heading-->
-        <h1 >Philip's Portfolio Website</h1>
-    <!--navigation bar-->
+    <header class="navigation">
+     <!--site heading/logo-->
+     <h1 >Philip's Portfolio Website</h1>
+     <!--navigation bar-->
+     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="./html/my_resume.html">Resume</a></li>
             <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
         </ul>
-    </nav>
+     </nav>
+     <!--contact me button-->
+     <button class="contact-me-btn">Contact Me</button>
 </header>  
 <!--end header-->
     
 <!--begin main-->
 <main>
-    <!--page heading-->
-    <div>
-    <h2>About Philip</h2>
-    </div>
-    
-    <!--about me section-->
-    <div>
-        <!--picture of myself-->
-        <div>
+    <!--begin hero section-->
+    <div class="about-me">
+     <!--section heading-->
+     <div class="section-header">
+     <h2>About Philip</h2>
+     </div>
+      <div class="main-content">
+        <!--left-side content-->
+            <div class="left-side">
+            <!--image of myself-->
             <img src="./assets/img/IMG_3402.png" alt="this is a picture of me" 
             width="300px" height=400px; />
-        </div>
         <br>
-        <div>
             <!--personality quote-->
-            <span>"I want freedom for the full expression of my personality."
+            <span id="quote">"I want freedom for the full expression of my personality."
             <br> -Mahatma Gandhi</span>
-            <!--About me paragraph-->
-            <article>
+            </div>
+            <br>
+            <!--right-sisde content-->
+            <div class="right-side">
+            <!--about me paragraph-->
+            <article id="about-me-p">
                 <p>My name is Philip Przekora. I am a senior majoring in computer science at 
                 Oakland University in <br> Auburn Hills, Michigan, expected to graduate in May.
                 I have always been interested in computers <br> but particularly took an interest
@@ -57,15 +63,13 @@
                 <a href="./html/my_resume.html">view my resume</a> or <a href="./html/my_fun_facts.html">
                 learn more about me</a> here.</p>
             </article>
-        </div>
-    </div>
-    
-        <!--Progress to degree label and progress bar-->
-        <div>
+            </div>
+            <!--Progress to degree label and progress bar-->
             <progress id="credit-count" value="106" max="128"></progress>
             <label for="credit-count">106 of 128 credits completed towards B.S degree</label>
-        </div>
-    
+      </div>           
+    </div>
+    <!--end of hero section-->
 </main>
 <!--end main-->
 
@@ -73,16 +77,17 @@
 <!--begin footer-->
 <hr>
 <!--Links to email/socials-->
-<div>
-<ul>Connect with me:
+<div class="links" >
+  <h4>Connect with me</h4>
+  <ul>
     <li><a href="mailto:pep020501@gmail.com">Email</a></li>
     <li><a href="https://github.com/pep020501">Github</a></li>
     <li><a href="https://www.linkedin.com/in/przekora/">LinkedIn</a></li>
-</ul>
+   </ul>
 </div>
 
 <!--Copyright information--> 
-<div>
+<div class="copyright-info">
 <span>Copyright &copy; 2024 Philip Przekora. All Rights Reserved</span>
 </div>
 </footer>
