@@ -10,25 +10,62 @@
  font-style: normal;
  /* color codes */
  --bg-primary: var(#0097f5);
- --bg-secondary: var(#0064ab);
- --font-color-primary: var(#0301516);
+ --bg-secondary: var(#0030AB);
+ --font-color-primary: var(#030f16);
  --font-color-secondary: var(#22153a);
- --backup-color: var(#6dcdeb);
+ --logo-color: var(#6dcdeb);
+ --page-tabs-color: var(#5728B5);
 }
 
 /* main styling for page body */
 body {
-    height: 100vh;
-    background: var(--bg-primary);
+    height: 100hv;
+    background-color: var(--bg-primary, #0097f5);
+   
 }
 
+/* header and navigation */
 .navigation {
 display: flex;
 align-items: center;
 justify-content: space-between;
-height: 70px;
-background: var(--font-color-primary);
+height: 80px;
+background: var(--font-color-primary, #030f16);
+}
 
+/* header */
+.navigation h1{
+color: var(--logo-color,#6dcdeb);
+font-family: "Permanent Marker", cursive;
+font-weight: 500;
+}
+
+/* navigation positioning */
+.navigation nav ul{
+    display: flex;
 
 }
+
+/* navigation list */
+.navigation ul li {
+    list-style-type: none;
+}
+
+/* page tabs */
+.navigation ul li a{
+    text-decoration: none;
+    color: var(--page-tabs-color, #5728B5);
+    font-size:18px;
+    justify-content: space-between;
+    margin-right: 20px;
+    transition: color 0.6 ease-in-out;
+}
+
+/* the user hovers over the page tabs and the text color changes from violet to red */
+.navigation ul li:hover a{
+   color: #B52C2C; 
+}
+
+
+
 
