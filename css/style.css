@@ -84,10 +84,41 @@ font-weight: 500;
     transition: color 0,6 ease;
 }
 
-/*the user hovers over the button and it changes color while the pointer is on it */
+/* the user hovers over the button and it changes color while the pointer is on it */
 .contact-me-btn:hover{
     color:var(--font-color-secondary);
     background-color: var(--page-tabs-color);
     border-color: var(--font-color-secondary);
 }
+ 
+/* about me body */
+ .about-me {
+  margin-top: 100px;
+  display:flex;
+ }
+
+ /* left side elements */
+ .about-me .left-side{
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 20px;
+ }  
+
+ /* personality quote */
+ .about-me .left-side #quote{
+   font-size: 17px;
+   font-family:'Times New Roman', Times, serif; 
+ }
+
+ .about-me .right-side{
+  font-size: 17px;
+  justify-content: space-between;
+
+  
+ }
+ 
+
+ 
 
