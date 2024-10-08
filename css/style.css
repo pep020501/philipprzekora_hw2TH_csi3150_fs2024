@@ -10,20 +10,20 @@
  font-family: "Adamina", serif;
  font-style: normal;
  /* color codes */
- --bg-primary: var(#0097f5);
- --bg-secondary: var(#0030AB);
- --font-color-primary: var(#030f16);
- --font-color-secondary: var(#22153a);
- --logo-color: var(#6dcdeb);
- --page-tabs-color: var(#5728B5);
- --btn-background-color: var(#)
+ --bg-primary: #0097f5;
+ --bg-secondary: #0030AB;
+ --font-color-primary: #030f16;
+ --font-color-secondary: #22153a;
+ --logo-color:#6dcdeb;
+ --page-tabs-color: #5728B5;
+
  
 }
 
 /* main styling for body */
 body {
     height: 100hv;
-    background-color: var(--bg-primary, #0097f5);
+    background-color: var(--bg-primary);
    
 }
 
@@ -33,12 +33,12 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 80px;
-background: var(--font-color-primary, #030f16);
+background: var(--font-color-primary);
 }
 
 /* header */
 .navigation h1{
-color: var(--logo-color,#6dcdeb);
+color: var(--logo-color);
 font-family: "Permanent Marker", cursive;
 font-weight: 500;
 }
@@ -57,7 +57,7 @@ font-weight: 500;
 /* page tabs */
 .navigation ul li a{
     text-decoration: none;
-    color:var(--page-tabs-color, #5728B5); 
+    color:var(--page-tabs-color); 
     font-size:18px;
     justify-content: space-between;
     margin-right: 20px;
@@ -72,22 +72,22 @@ font-weight: 500;
 
 /* "contact me" button */
 .contact-me-btn{
-    color: var(--bg-primary, #0030AB);
-    background: var(--logo-color, #6dcdeb);
+    color: var(--bg-primary);
+    background: var(--logo-color);
     font-family: "Poppins", serif; 
     font-size: 16px;
     height: 50px;
     width: 150px;
     padding: 5px 15px;
     border-width: 5px;
-    border-color: var(--bg-primary, #0030AB);
+    border-color: var(--bg-primary);
     transition: color 0,6 ease;
 }
 
 /*the user hovers over the button and it changes color while the pointer is on it */
 .contact-me-btn:hover{
-    color:var(--font-color-secondary, #22153a);
-    background-color: var(--page-tabs-color, #5728B5);
-    border-color: var(--font-color-secondary, #22153a);
+    color:var(--font-color-secondary);
+    background-color: var(--page-tabs-color);
+    border-color: var(--font-color-secondary);
 }
 
