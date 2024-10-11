@@ -16,6 +16,7 @@
  --font-color-secondary: #22153a;
  --logo-color:#6dcdeb;
  --page-tabs-color: #5728B5;
+ --footer-background: #1975CB;
 
  
 }
@@ -24,7 +25,6 @@
 body {
     height: 100hv;
     background-color: var(--bg-primary);
-   
 }
 
 /* header and navigation */
@@ -67,7 +67,7 @@ font-weight: 500;
 
 /* the user hovers over the tabs and the text color changes from violet to red */
 .navigation ul li:hover a{
-   color: #B52C2C; 
+   color: #891515; 
 }
 
 /* "contact me" button */
@@ -110,18 +110,88 @@ font-weight: 500;
  .about-me .left-side #quote{
    font-size: 17px;
    font-family:'Times New Roman', Times, serif; 
+   margin-bottom: 20px;
  }
 
  .about-me .right-side{
-  font-size: 17px;
   justify-content: space-between;
   margin-left: 50px;
+  margin-top: 40px;
  }
  
- .about-me .right-side h2{
+.about-me .right-side h2{
 margin-bottom: 20px;
+ }
+
+ /*about me paragraph */
+ .about-me .right-side #about-me-p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+ }
+
+ /* progress bar */
+ .about-me .right-side #credit-count{
+ margin-top: 80px;
+ accent-color:var(--font-color-primary);
+ transition: color 0.3s ease-out;
+ }
+
+ /* event where user hovers over the progress bar with cursor */
+ .about-me .right-side #credit-count:hover{
+  accent-color: #e9d32d;
+ }
+
+ /* progress bar label */
+  label {
+    font-size: 15px;
+ }
+
+ .footer {
+    background-color: var(--footer-background);
+    height: 200px;
+ }
+
+
+ .footer .links h4{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
     
  }
 
+ .footer .links ul{
+   text-align: center;
+    margin-bottom: 20px;
+    gap: 20px;
+ }
+
+ .footer .links ul li{
+   list-style-type: none;
+ }
+   
+ .footer .links ul li a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--font-color-primary);
+
+ }
+
+ .footer .links ul li a:visited{
+    color:#ffff;
+ }
+
+ .footer .copyright-info{
+    margin-top: 50px;
+    text-align:center;
+ }
+
+
+
+
+   
+
+ 
 
 
