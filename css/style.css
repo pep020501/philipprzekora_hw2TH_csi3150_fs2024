@@ -112,15 +112,17 @@ font-weight: 500;
    font-family:'Times New Roman', Times, serif; 
    margin-bottom: 20px;
  }
-
+ 
+ /*right side elements */
  .about-me .right-side{
   justify-content: space-between;
   margin-left: 50px;
   margin-top: 40px;
  }
  
-.about-me .right-side h2{
-margin-bottom: 20px;
+ /*about me header */
+ .about-me .right-side h2{
+ margin-bottom: 20px;
  }
 
  /*about me paragraph */
@@ -147,12 +149,13 @@ margin-bottom: 20px;
     font-size: 15px;
  }
 
+ /* footer section */
  .footer {
     background-color: var(--footer-background);
     height: 200px;
  }
 
-
+/* footer social links */
  .footer .links h4{
     margin-top: 20px;
     font-size: 15px;
@@ -160,38 +163,103 @@ margin-bottom: 20px;
     text-align: center;
     
  }
-
+ 
+ /* social links list */
  .footer .links ul{
    text-align: center;
     margin-bottom: 20px;
     gap: 20px;
  }
 
+ 
  .footer .links ul li{
    list-style-type: none;
  }
    
+ /*social links */
  .footer .links ul li a{
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     color: var(--font-color-primary);
 
  }
-
+ 
+ /* event where the link is a different color to indicate that the user has clicked on it previously */
  .footer .links ul li a:visited{
     color:#ffff;
  }
-
+ 
+ /* copyright information */
  .footer .copyright-info{
     margin-top: 50px;
     text-align:center;
+    
  }
 
+ /* resume page heading */
+ .page-heading {
+   text-align: center;
+   margin-top: 20px;
+ }
 
+ /* resume page header */
+ .page-heading h3{
+   font-size: 15px;
+ }
 
+ .top{
+   display: flex;
+   margin-top: 30px;
+   gap: 210px;
+   margin-bottom: 20px;
+ }
 
+ .top #objective-section{
+  text-align: left;
+  margin-left: 60px;
+ }
+
+ .top #objective-section h3{
+   margin-bottom: 10px;
+ }
+
+ .top #objective-section p{
+   font-size: 16px;
+ }
+
+ .top #experience-section {
    
+   margin-bottom: 20px;
+   margin-right: 10px;
+ }
 
+ .top #experience-section h3{
+   margin-bottom: 10px;
+ }
+
+ .top #experience-section h4{
+   font-size: 15px;
+ }
+
+ .top #experience-section #summary{
+   margin-top: 10px;
+   font-size: 16px;
+ }
+
+ .bottom {
+   display: flex;
+   margin-top: 30px;
+   gap: 94px;
+   margin-bottom: 40px;
+ } 
+
+ .bottom #education-section{
+   margin-left: 60px;
+ }
+ 
+ .bottom #education-section h3{
+  margin-bottom: 10px;
+ }
  
 
 
