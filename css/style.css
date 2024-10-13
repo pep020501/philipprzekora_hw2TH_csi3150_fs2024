@@ -367,7 +367,7 @@ font-weight: 500;
 
 /* audio track */
 .bottom-fact #audio audio{
-  background: var(--page-tabs-color);
+  background: var(--bg-secondary);
   margin-bottom: 10px;
 }
 
