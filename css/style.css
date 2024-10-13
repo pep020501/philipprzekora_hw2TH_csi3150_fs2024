@@ -10,8 +10,8 @@
  font-family: "Adamina", serif;
  font-style: normal;
  /* color codes */
- --bg-primary: #0097f5;
- --bg-secondary: #0030AB;
+ --bg-primary: #359ad8;
+ --bg-secondary: #052985;
  --font-color-primary: #030f16;
  --font-color-secondary: #22153a;
  --logo-color:#6dcdeb;
@@ -69,7 +69,7 @@ font-weight: 500;
 
 /* "contact me" button */
 .contact-me-btn{
-    color: var(--bg-primary);
+    color: var(--footer-background);
     background: var(--logo-color);
     font-family: "Poppins", serif; 
     font-size: 16px;
