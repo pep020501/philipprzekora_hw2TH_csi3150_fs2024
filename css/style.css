@@ -430,4 +430,43 @@ margin-left: 10px;
 
 @media (max-width: 780px){
 
+  .contact-me-btn {
+  margin-left: 20px;
+}
+
+br {
+  display: none;
+}
+
+.about-me {
+  margin-top: 10px;
+   margin-bottom: 0;
+   margin-right: 20px;
+
+ }
+
+ .about-me .left-side {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+
+.about-me .left-side #quote {
+  margin-bottom: 150px;
+ }
+
+ .about-me .right-side {
+  margin-top: 100px;
+  margin-bottom: 5px;
+ }
+
+ .about-me .right-side #credit-count {
+  margin-top: 20px;
+ }
+
+ .bottom #extracurricular {
+  margin-right: 10px;
+ }
+
 }
