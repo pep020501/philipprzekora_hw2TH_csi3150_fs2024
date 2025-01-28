@@ -469,4 +469,12 @@ br {
   margin-right: 10px;
  }
 
+ .top-facts #book {
+ margin-left: 70px;
+ }
+
+ .top-facts #tv-show iframe{
+  width: 300px;
+ }
+
 }
